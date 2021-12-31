@@ -1,20 +1,27 @@
-const Email = document.querySelector('#inputEmail4');
+const email = document.querySelector('#inputEmail4');
 const password = document.querySelector('#inputPassword4');
-const Address = document.querySelector('#inputAddress');
+const address = document.querySelector('#inputAddress');
 const city = document.querySelector('#inputCity');
 const state = document.querySelector('#inputText4');
-const message = document.querySelector('#msg');
-const form = document.querySelector('form');
+const message = document.querySelector('#errmsg');
+const formDetails = document.querySelector('form');
 
-form.addEventListener('submit', formValidation);
+formDetails.addEventListener('submit', formValidation);
 
 function formValidation(e) {
     e.preventDefault();
 
 
-    if (Email.value === "" && password.value === "") {
+    if (email.value === "" || password.value === "") {
         
-        message.innerHTML="Form can not be submitted blank"; 
+		// styling
+		message.style.color = "red";
+        message.style.marginBottom = 0;
+		message.style.fontSize = "17px";
+		message.style.fontWeight = "bold";
+		
+		
+        message.innerHTML="Email and password fields are required!"; 
     }
     //     message.style.color = "green";
     //     message.innerHTML="Form submitted successfully";
