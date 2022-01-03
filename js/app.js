@@ -12,18 +12,22 @@ function formValidation(e) {
     e.preventDefault();
 
 
-    if (email.value === "" || password.value === "") {
-        
-		// styling
-		message.style.color = "red";
-        message.style.marginBottom = 0;
-		message.style.fontSize = "17px";
-		message.style.fontWeight = "bold";
-		
-		
-        message.innerHTML="Email and password fields are required!"; 
-    }
-    //     message.style.color = "green";
-    //     message.innerHTML="Form submitted successfully";
-    // }
+    if (
+			email.value === '' ||
+			password.value === '' ||
+			address.value === '' ||
+			city.value === '' ||
+			state.value
+		) {
+			// styling
+			message.style.color = 'red';
+			message.style.marginBottom = 0;
+			message.style.fontSize = '17px';
+			message.style.fontWeight = 'bold';
+            message.innerHTML = 'input fields can not be submitted empty';
+		}else{
+			message.style.color = 'green';
+			message.innerHTML='Form submitted successfully';
+		}
+    
 } 
