@@ -25,9 +25,6 @@ function formValidation(e) {
 			message.style.fontSize = '17px';
 			message.style.fontWeight = 'bold';
             message.innerHTML = 'input fields can not be submitted empty';
-		}else{
-			message.style.color = 'green';
-			message.innerHTML='Form submitted successfully';
 		}
     
 } 
