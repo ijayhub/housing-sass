@@ -26,6 +26,6 @@ The technology i used was:
 
 
 
-The code of this project can be gotten from my github account :-
+The code of this project can be gotten from my github account :- https://github.com/ijayhub/housing-sass
 
 ![This an image](https://123goodmorningquotes.com/wp-content/uploads/2020/05/Thank-You-GIF-1.gif)
